@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*------------
     COMMONS
 -------------*/
@@ -19,6 +23,11 @@
     HEADER
 -------------*/
 header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: lightgray;
 }
 
@@ -50,4 +59,32 @@ header {
 }
 .main-nav ul li a:hover, .main-nav ul li a.active {
     border-bottom-color: lightgreen;
+}
+
+/*------------
+    MAIN
+-------------*/
+section {
+    position: relative;
+    height: 100vh;
+}
+
+#vernazza {
+    background-color: lightcoral;
+}
+#manarola {
+    background-color: lightgrey;
+}
+#riomaggiore {
+    background-color: lightseagreen;
+}
+
+.box-text {
+    position: absolute;
+    /* coordinate rispetto al genitore position relative */
+    top: 50%;
+    left: 50%;
+    /* traslo l'elemento di -200px , -200px verso l'alto e sinistra */
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
