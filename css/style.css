@@ -6,3 +6,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*------------
+    COMMONS
+-------------*/
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/*------------
+    HEADER
+-------------*/
+header {
+    background-color: lightgray;
+}
+
+.main-nav, .main-nav ul li {
+    display: inline-block;
+}
+
+.logo {
+    margin-right: 20px;
+    width: 160px;
+}
+.logo, .main-nav {
+    vertical-align: middle;
+}
+
+.main-nav {
+    width: calc(100% - 184px);
+    text-align: right;
+}
+
+.main-nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 20px 15px;
+    font-size: 18px;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+}
+.main-nav ul li a:hover, .main-nav ul li a.active {
+    border-bottom-color: lightgreen;
+}
